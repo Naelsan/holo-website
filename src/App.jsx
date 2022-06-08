@@ -4,21 +4,25 @@ import HomeComponent from './components/HomeComponent';
 import LanguageComponent from './components/LanguageComponent';
 import ProjectComponent from './components/ProjectComponent';
 import TeamComponent from './components/TeamComponent';
+import Footer from './components/Footer'
+
 
 
 function App() {
 
   return (
-
-    <div className="App">
-      <p>holomedic</p>
-      <header className="App-header">
-        <LanguageComponent/>
-        <HomeComponent/>
-      </header>
-      <ProjectComponent/>
-      <TeamComponent/>
-    </div>
+    <>
+      <div className="App">
+        <p>holomedic</p>
+        <header className="App-header">
+          <LanguageComponent />
+          <HomeComponent />
+        </header>
+        <ProjectComponent />
+        <TeamComponent />
+        <Footer/>
+      </div>
+    </>
   );
 }
 
