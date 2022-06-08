@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  position: relative;
+  overflow: hidden;
+  height: 33vmin;
+  pointer-events: none;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+/* Language part */
+#centerDivLanguage{
+    text-align: center;
+    position: absolute;
+    display: table;
+    right: 0;
+    top:0;
+}
+#centerDivLanguage > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.imageLanguage {
+  height: 20px;
+  width: 30px;
+}
+.left {
+  width: 50%;
+  height: inherit;
+  text-align: center;
+  padding: 2px;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+/* TEAM PART*/
+#centerDivTeam{
+  text-align: center;
+  position: absolute;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+#centerDivTeam > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.text-section-presentation { 
+  position: absolute;
+  height: 70%;
+  width: 40%;
+}
+.text-section-presentation > p:hover{
+  transform: scale(1.3);
+}
+
+.text-section-presentation .equipe {
+ position: absolute;
+ left: 0;
+ top: 45%;
+}
+.text-section-presentation .project {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+.text-section-presentation .contact {
+  position: absolute;
+  bottom: 0;
+  left: 36%;
+}
+
+
+
+
+.leftTeamPart {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.rightTextPart {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.team-part-title{
+  color: red;
+  top:0;
+}
+.team-image{
+  border-radius: 50%;
+  width: 180px;
+  margin-bottom: 15%;
+}
+
+
+/* Project part */
+.relative-container{
+  position: relative;
+}
+
+.textProject {
+  position: absolute;
+  top: 40%;
+}
