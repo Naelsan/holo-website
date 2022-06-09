@@ -25,20 +25,20 @@ export default class TeamComponent extends Component {
     render() {
         return (
             <>
-                <section id="teamComponent">
+                <section id="teamComponent" style={{"background-color": 'aliceblue' }}>
                     <div id='centerDivTeam'>
                         <div className='leftTeamPart'>
-                            <p>Notre équipe</p>
+                            <p className="space-between-content">Notre équipe</p>
                             <div className='container'>
-                                <div className='row'>
+                                <div className='row space-between-content'>
                                     {this.team.slice(0, 3).map((person, index) => (
-                                        <div className='col-4'>
+                                        <div className='col-4 '>
                                             <img className='team-image' src={person.image} alt="Avatar"
                                                 onClick={() => this.updateDescriptionToDisplay(index)} />
                                         </div>
                                     ))}
                                 </div>
-                                <div className='row'>
+                                <div className='row space-between-content'>
                                     {this.team.slice(3, this.team.length).map((person, index) => (
                                         <div className='col-4'>
                                             <img className='team-image' src={person.image} alt="Avatar"

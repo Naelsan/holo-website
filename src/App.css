@@ -83,18 +83,21 @@
  left: 0;
  top: 45%;
  text-decoration: none;
+ color: inherit;
 }
 .text-section-presentation .project {
   position: absolute;
   right: 0;
   top: 45%;
   text-decoration: none;
+  color: inherit;
 }
 .text-section-presentation .contact {
   position: absolute;
   bottom: 0;
   left: 36%;
   text-decoration: none;
+  color: inherit;
 }
 
 
@@ -131,12 +134,18 @@
   top: 40%;
 }
 
-
 .footer{
   margin-top: 1rem;
   padding: 1rem;
-  background-color: rgb(235, 195, 64);
+  background-color: #EFEBEB;
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+
+
+.space-between-content{
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
