@@ -25,34 +25,35 @@ export default class TeamComponent extends Component {
     render() {
         return (
             <>
-                <div id='centerDivTeam'>
-                    <div className='leftTeamPart'>
-                        <p>Notre équipe</p>
-                        <div className='container'>
-                            <div className='row'>
-                                {this.team.slice(0, 3).map((person, index) => (
-                                    <div className='col-4'>
-                                        <img className='team-image' src={person.image} alt="Avatar"
-                                            onClick={() => this.updateDescriptionToDisplay(index)} />
-                                    </div>
-                                ))}
-                            </div>
-                            <div className='row'>
-                                {this.team.slice(3, this.team.length).map((person, index) => (
-                                    <div className='col-4'>
-                                        <img className='team-image' src={person.image} alt="Avatar"
-                                            onClick={() => this.updateDescriptionToDisplay(index + 3)} />
-                                    </div>
-                                ))}
+                <section id="teamComponent">
+                    <div id='centerDivTeam'>
+                        <div className='leftTeamPart'>
+                            <p>Notre équipe</p>
+                            <div className='container'>
+                                <div className='row'>
+                                    {this.team.slice(0, 3).map((person, index) => (
+                                        <div className='col-4'>
+                                            <img className='team-image' src={person.image} alt="Avatar"
+                                                onClick={() => this.updateDescriptionToDisplay(index)} />
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className='row'>
+                                    {this.team.slice(3, this.team.length).map((person, index) => (
+                                        <div className='col-4'>
+                                            <img className='team-image' src={person.image} alt="Avatar"
+                                                onClick={() => this.updateDescriptionToDisplay(index + 3)} />
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
+                        <div className='rightTextPart'>
+                            Rapide description
+                            <p>{this.state.currentDescr}</p>
+                        </div>
                     </div>
-                    <div className='rightTextPart'>
-                        Rapide description
-                        <p>{this.state.currentDescr}</p>
-                    </div>
-                </div>
-
+                </section>
             </>
 
         )

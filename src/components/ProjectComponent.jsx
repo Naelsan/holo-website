@@ -4,7 +4,7 @@ import imageTest from '../images/ho.png'
 export default class ProjectComponent extends Component {
   render() {
     return (
-      <div>
+      <div  id="projectComponent">
         <div className='container'>
           <div className='row'>
             <div className='col-6'>
