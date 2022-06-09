@@ -1,29 +1,44 @@
 import './App.css';
 import ContactComponent from './components/ContactComponent';
-import HomeComponent from './components/HomeComponent';
 import LanguageComponent from './components/LanguageComponent';
 import ProjectComponent from './components/ProjectComponent';
 import TeamComponent from './components/TeamComponent';
-import Footer from './components/Footer'
+import { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import HomeComponent from './components/HomeComponent';
 
 
+export default class App extends Component {
 
-function App() {
+  componentDidMount() {
+    var image = document.querySelector("#cow")
+    const onMouseMove = (e) => {
+      let angle = Math.atan2(((window.screen.height / 2) - e.y), (e.x - (window.screen.width / 2)))
+      image.setAttribute("style", 'transform : rotate(' + (-(angle * (180 / Math.PI))) + 'deg)')
+    }
+    document.addEventListener('mousemove', onMouseMove)
+  }
 
-  return (
-    <>
-      <div className="App">
-        <p>holomedic</p>
-        <header className="App-header">
-          <LanguageComponent />
-          <HomeComponent />
-        </header>
-        <ProjectComponent />
-        <TeamComponent />
-        <Footer/>
-      </div>
-    </>
-  );
+  render() {
+    return (
+      <>
+        <BrowserRouter>
+          <div className="App">
+            <p>holomedic</p>
+            <header className="App-header">
+              <LanguageComponent />
+              <HomeComponent/>
+            </header>
+            <ProjectComponent/>
+            <TeamComponent/>
+            <ContactComponent/>
+          </div>
+        </BrowserRouter>
+      </>
+    );
+  }
 }
 
-export default App;
+
+
