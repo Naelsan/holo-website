@@ -10,12 +10,36 @@ export default class TeamComponent extends Component {
     }
 
 
-    team = [{ 'Name': 'Alexandre', 'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", "descr": "Description pour Alexandre" },
-    { 'Name': 'Guillaume', 'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", "descr": "Description pour Guillaume" },
-    { 'Name': 'Mohammed', 'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", "descr": "Description pour Mohamed" },
-    { 'Name': 'Naël', 'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", "descr": "Description pour Naël" },
-    { 'Name': 'Remy', 'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", "descr": "Description Remy" },
-    { 'Name': 'Yann', 'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", "descr": "Description Yann" }]
+    team = [
+    {   'Name': 'Alexandre',
+        'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", 
+        'descr': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+    },
+    { 
+        'Name': 'Guillaume', 
+        'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", 
+        'descr': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+    },
+    { 
+        'Name': 'Mohammed', 
+        'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", 
+        'descr': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+    },    
+    { 
+        'Name': 'Naël', 
+        'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", 
+        'descr': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+    },
+    { 
+        'Name': 'Remy', 
+        'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png", 
+        'descr': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+    },
+    { 
+        'Name': 'Yann', 
+        'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png",
+        'descr': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+    }]
 
     updateDescriptionToDisplay(index) {
         console.log(this.team[index].descr)
@@ -49,8 +73,7 @@ export default class TeamComponent extends Component {
                             </div>
                         </div>
                         <div className='rightTextPart'>
-                            Rapide description
-                            <p>{this.state.currentDescr}</p>
+                            <p className='description-text'>{this.state.currentDescr}</p>
                         </div>
                     </div>
                 </section>

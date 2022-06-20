@@ -9,6 +9,10 @@
   pointer-events: none;
 }
 
+.holomedic{
+  bottom:0;
+}
+
 
 
 .App-header {
@@ -111,7 +115,11 @@
 .rightTextPart {
   width: 50%;
   height: 100%;
-  text-align: center;
+  text-align: justify;
+}
+.description-text {
+  width: 70%;
+  margin-left: 15%;
 }
 .team-part-title{
   color: red;

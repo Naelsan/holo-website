@@ -25,7 +25,6 @@ export default class App extends Component {
       <>
         <BrowserRouter>
           <div className="App">
-            <p>holomedic</p>
             <header className="App-header">
               <LanguageComponent />
               <HomeComponent/>

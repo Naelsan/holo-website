@@ -5,6 +5,7 @@ import  frflag  from '../images/frenchflag.png'
 export default class LanguageComponent extends Component {
     render() {
         return (
+            <>
             <div id='centerDivLanguage'>
                 <div className='left'>
                     <img className='imageLanguage' src={frflag} alt="logo" />
@@ -13,6 +14,7 @@ export default class LanguageComponent extends Component {
                     <img className='imageLanguage' src={usflag} alt="logo" />
                 </div>
             </div>
+            </>
         )
     }
 }
