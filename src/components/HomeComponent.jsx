@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import logo from '../images/logo.png';
+import logo from '../images/head.png';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default class HomeComponent extends Component {
     render() {
         return (
             <>
-                <p className='holomedic'>Holomedic</p>
+
                 <div className='rounded-div-main-text'>
                     <img id="cow" src={logo} className="App-logo" alt="logo" />
                 </div>
@@ -17,6 +17,7 @@ export default class HomeComponent extends Component {
                     <Link className='project link' to="#projectComponent">Projet</Link>
                     <Link className='contact link' to="#contactComponent">Nous contacter</Link>
                 </div>
+
             </>
         )
     }

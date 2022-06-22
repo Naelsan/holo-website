@@ -7,6 +7,7 @@
   overflow: hidden;
   height: 33vmin;
   pointer-events: none;
+  margin-top: 35%;
 }
 
 .holomedic{
@@ -30,6 +31,17 @@
   color: #61dafb;
 }
 
+
+/* Home part */
+.brand{
+  margin-top:-15%;
+}
+.color-grey{
+  color: #d5d4e5;
+}
+.italic-text{
+  font-style: italic;
+}
 
 /* Language part */
 #centerDivLanguage{
@@ -71,7 +83,23 @@
   display: table-cell;
   vertical-align: middle;
 }
-
+.team-part-title{
+  color: red;
+  top:0;
+}
+.team-image{
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 15%;
+}
+.team-image:hover{
+  cursor: pointer;
+}
+.linkedin-logo{
+  width: 45px;
+  height: 45px;
+}
 
 .text-section-presentation { 
   position: absolute;
@@ -121,14 +149,8 @@
   width: 70%;
   margin-left: 15%;
 }
-.team-part-title{
-  color: red;
-  top:0;
-}
-.team-image{
-  border-radius: 50%;
-  width: 180px;
-  margin-bottom: 15%;
+.bold{
+  font-size: 1.1rem;
 }
 
 

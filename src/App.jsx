@@ -26,12 +26,15 @@ export default class App extends Component {
         <BrowserRouter>
           <div className="App">
             <header className="App-header">
-              <LanguageComponent />
-              <HomeComponent/>
+              <div className='brand'>
+                <h1>Holo Medic</h1>
+                <h5 className='color-grey italic-text'>Tout le monde peut sauver une vie</h5>
+              </div>
+              <HomeComponent />
             </header>
-            <ProjectComponent/>
-            <TeamComponent/>
-            <ContactComponent/>
+            <ProjectComponent />
+            <TeamComponent />
+            <ContactComponent />
           </div>
         </BrowserRouter>
       </>
