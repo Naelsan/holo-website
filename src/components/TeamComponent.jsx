@@ -78,7 +78,6 @@ export default class TeamComponent extends Component {
                 <section id="teamComponent" style={{"background-color": 'rgba(249, 246, 245 , 1.0)' }}>
                     <div id='centerDivTeam'>
                         <div className='leftTeamPart'>
-                            <p className="space-between-content">Notre équipe</p>
                             <div className='container'>
                                 <div className='row space-between-content'>
                                     {this.team.slice(0, 3).map((person, index) => (
@@ -103,6 +102,7 @@ export default class TeamComponent extends Component {
                             </div>
                         </div>
                         <div className='rightTextPart'>
+                            {!this.state.currentDescr && <p className="space-between-content">Notre équipe</p>}
                             {this.state.currentPoste && <p className='description-text'>{this.state.currentPerson} est notre {this.state.currentPoste}</p>}
                            
                             {this.state.currentLinkedin &&  <img className='logos-contact-perso' 

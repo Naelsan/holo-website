@@ -7,6 +7,7 @@ export default class ProjectComponent extends Component {
     super()
     this.state = {
       numImage: 0,
+      numImageBis:4,
     }
   }
 
@@ -20,10 +21,20 @@ export default class ProjectComponent extends Component {
     else this.setState({ numImage: this.state.numImage + 1 })
   }
 
+  nbClickBis = 4
+  updateImageBisProjectToDisplay() {
+    this.nbClickBis++
+    if (this.nbClickBis > 6) {
+      this.setState({ numImageBis: 4 })
+      this.nbClickBis = 4
+    }
+    else this.setState({ numImageBis: this.state.numImageBis + 1 })
+  }
+
   render() {
     return (
-      <div id="projectComponent">
-        <div className='container'>
+      <div id="projectComponent" >
+        <div className='container' style={{'margin-bottom': '5%'}}>
           <div className='row'>
             <div className='col-6'>
               <img className='imageProject' src={imageTest} alt="First one" />
@@ -35,7 +46,7 @@ export default class ProjectComponent extends Component {
           </div>
         </div>
 
-        <div className='container'>
+        <div className='container' style={{'margin-bottom': '5%'}}>
           <div className='row'>
             <div className='col-6 relative-container'>
               <p className='title-project-parts'>
@@ -53,10 +64,12 @@ export default class ProjectComponent extends Component {
           </div>
         </div>
 
-        <div className='container'>
+        <div className='container' style={{'margin-bottom': '5%'}}>
           <div className='row'>
             <div className='col-6'>
-              <img className='imageProject' src={imageTest} alt="Third one  " />
+            <img className='imageProject'
+                src={require(`../images/projet/${this.state.numImageBis}.png`)} alt="Avatar"
+                onClick={() => this.updateImageBisProjectToDisplay()} />
             </div>
             <div className='col-6 relative-container'>
               <p className='title-project-parts'>Des évoutions ambitieuses</p>
