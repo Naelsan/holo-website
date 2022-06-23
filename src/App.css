@@ -82,6 +82,7 @@
 #centerDivTeam > div {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 .team-part-title{
   color: red;
@@ -96,9 +97,10 @@
 .team-image:hover{
   cursor: pointer;
 }
-.linkedin-logo{
+.logos-contact-perso{
   width: 45px;
   height: 45px;
+  margin-left: 5px;
 }
 
 .text-section-presentation { 
@@ -146,8 +148,10 @@
   text-align: justify;
 }
 .description-text {
-  width: 70%;
-  margin-left: 15%;
+  text-align: justify;
+  text-align-last: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .bold{
   font-size: 1.1rem;
