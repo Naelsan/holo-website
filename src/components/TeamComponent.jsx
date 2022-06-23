@@ -18,7 +18,7 @@ export default class TeamComponent extends Component {
     team = [
     {   'Name': 'Alexandre',
         'image': "https://cdn-icons-png.flaticon.com/512/147/147144.png",
-        "poste":  'développeur Réalité augmentée',
+        "poste":  'directeur technique',
         'descr': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ,
         'linkedin': 'https://www.linkedin.com/in/alexandre-ward/',
         'mail': 'alexandre.ward@ecole-hexagone.com'
@@ -104,7 +104,7 @@ export default class TeamComponent extends Component {
                         </div>
                         <div className='rightTextPart'>
                             {this.state.currentPoste && <p className='description-text'>{this.state.currentPerson} est notre {this.state.currentPoste}</p>}
-                            <p className='description-text'>{this.state.currentDescr}</p>
+                           
                             {this.state.currentLinkedin &&  <img className='logos-contact-perso' 
                                                 src={require(`../images/linkedin.png`)} alt="Avatar"
                                                 onClick={() => window.open(this.state.currentLinkedin, '_blank', 'noopener,noreferrer')} />}

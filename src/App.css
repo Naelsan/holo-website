@@ -42,6 +42,11 @@
 .italic-text{
   font-style: italic;
 }
+.title-project-parts{
+  padding-top: 7%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 /* Language part */
 #centerDivLanguage{
@@ -171,10 +176,15 @@
 .footer{
   margin-top: 1rem;
   padding: 1rem;
-  background-color: #EFEBEB;
+  font-size: 1.2rem;
   bottom: 0;
   left: 0;
   width: 100%;
+} 
+
+.underline{
+  text-decoration: underline;
+  text-decoration-color: #282c34 ;
 }
 
 
